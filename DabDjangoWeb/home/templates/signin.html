@@ -1,0 +1,45 @@
+<li class="nav-item">
+  <button type="button" class="btn navBtn me-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Sign in
+  </button>
+</li>
+<!-- Sign In Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">User Sign In</h1>
+        
+      </div>
+      <div class="modal-body">
+        Please sign in with one
+        of your existing third party accounts.
+        <div id="gSignInWrapper">
+          <span class="label">Sign in with:</span>
+          <div id="customBtn" class="customGPlusSignIn">
+            <span class="icon"></span>
+            <span class="buttonText">Google</span>
+          </div>
+        </div>
+        <!-- <form method="post" action="{% url 'submit_form' %}">
+          <br />
+          <p class="warning"> Friendly Reminder:
+            <br />Your username for digital agriculture website will be
+          </p>
+          <br />
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+          </div>
+          <br />
+          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+        </form> -->
+      </div>
+
+    </div>
+
+  </div>
+</div>

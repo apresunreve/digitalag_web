@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>ICICLE Edge Configuration Instructions</title>
+</head>
+
+<body>
+<pre>
+This file describes the manual steps to set up
+an Ubuntu ICICLE edge device.
+
+#Assumptions:  
+1. The device is running Ubuntu linux.
+2. The user icicleadmin has passwordless Sudo privileges
+3. The user icicleworld has passwordless Sudo privileges
+4. The local network is configured with access to the Internet
+5. Curl and bash are installed
+6. The required keys are in the /home/.ssh directory and /home/.ssh/ssh_config is set up correctly
+
+Configuration:
+  Run the following command 
+1. sudo curl -sfL http://149.165.155.188:2298/icicleEdgeConfigureTool.sh > install.sh; bash ./install.sh 
+
+
+</pre>
+<hr>
+<br><br>
+<b>Aerial Scouting Unit Instructions</b>
+<pre>
+  Run the following commands:
+  1. cd icicleEdge
+  2. sudo curl -sfL http://149.165.155.188:2298/icicleASUEdgeConfigureTool.sh > ASUinstall.sh; bash ./ASUinstall.sh
+</pre>
+</body>
+

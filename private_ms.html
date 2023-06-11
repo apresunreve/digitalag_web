@@ -1,0 +1,96 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="http://149.165.155.188:2298/css/style.css">
+
+<!-- You MUST BE SIGNED IN TO GET THE FOLLOWING
+  CONTENT -->
+  <div id="about" class="aboutContainer container-fluid">
+    <div class="AboutInfo">
+      <div class="row">
+        <div class="col-12 offset-1">
+          <div class="AboutInfoTitle">
+            Digital Agriculture Microservices<br>
+          </div>
+					<p>All services provided here are
+					available via the Apache 2 License.
+					The creators disclaim all warranties
+					even for fitness of purpose. We also
+					provide no guarantees on data privacy
+					including data loss to cyber attack
+					and/or negligence.  Use at your own risk.</p>
+        </div>
+      </div>
+    </div>
+    <div class="teamContainer container-fluid">
+      <div class="row">
+        <div class="col-1">
+          <div id="ScoutingMapInterpretabilityUpload" class="container-fluid personInfoContainer">
+            <div class="container-fluid personInfoStyleContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="personInfoTextContainer">
+              <div class="aboutTextContainer">
+<a href = "/cgi-bin/callms.py?ms=i44445treeinterpretability&port=44445&path=/cgi-bin/&page=uploadFile.py">Scouting Map Interpretability (upload)</a><br>
+This project loads an html page with instructions on how to upload a dataset.
+The dataset must be in the format of a zip file containing a directory with all images in the dataset and two text files listing all the images and the predictions made by a previous model. The page then shows an upload option.<br>
+<br>
+After uploading the file, the page displays a message indicating the file was uploaded and unzipped and a link to run interpretation<br>
+              </div>
+            </div>
+	  </div>
+	</div>
+
+        <div class="col-2">
+          <div id="ScoutingMapInterpretability" class="container-fluid personInfoContainer">
+	    <div class="container-fluid personInfoStyleContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="personInfoTextContainer">
+              <div class="aboutTextContainer">
+		<a href ="/cgi-bin/callms.py?ms=i44445treeinterpretability&port=44445&path=/cgi-bin/&page=evaluateFeatures.py">Scouting Map Interpretability</a><br>
+This script follows the experiments outlined in Romero-Gainza E, Stewart C. AI-Driven Validation of Digital Agriculture Models. Sensors. 2023; 23(3):1187. https://doi.org/10.3390/s23031187
+This script uses the files uploaded by uploadFile.py (i.e. a dataset of images and their classifications by a previous model) and one extra parameter: numpixels=n, where n must be a positive integer smaller or equal than the number of pixels in any dimension of the input images.
+For example, if images are 108x108 then 108 is the maximum value of n.
+This script outputs:
+Two lines indicating the number of images in the training and test sets. These lines are used as sanity check.
+One line, showing the dimensions of the final test set after reading the images. i.e. with k images, and n as numpixels, it should output (k, n*n).
+Then, the next line will indicate whether it was possible to use every feature available to the model using the dataset.
+If it is possible, the output will say "success". Otherwise, the model was not able to use all features and the conclusion can be that the test set is not representative enough.
+The next two output lines read
+We expect to need samples: (some real value)
+We expect to need features: (some real value)
+These two lines, given how our decision tree was trained, indicate how many images and features were expected to be seen until all features in the model were used at least once.
+The next two lines show the actual measured value for number of images and features.
+The next line shows the number of total images that were obtained using random sampling. This is a superset of previous images seen. It also includes images that did not contribute any new feature.
+Finally, the last line shows the percent reduction of samples needed of this approach with respect to random sampling.		
+              </div>
+            </div>	    
+	  </div>
+	</div>
+
+
+
+        <div class="col-3">
+          <div id="ScoutingMapInterpretability" class="container-fluid personInfoContainer">
+	    <div class="container-fluid personInfoStyleContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="personInfoTextContainer">
+              <div class="aboutTextContainer">
+		<a href = "/cgi-bin/callms.py?ms=i29370activecubesim&port=29370&path=/&page=landingpgnew.html">UAV Simulator</a><br>
+Conducts power, energy and edge computing simulations for UAV.
+              </div>
+            </div>	    
+	  </div>
+	</div>
+
+
+
